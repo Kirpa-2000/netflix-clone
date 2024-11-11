@@ -1,0 +1,322 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Poppins',sans-serif; */
+
+}
+
+body{
+    background-color: black;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.main{
+    height: 70vh;
+    background-image: url('assest/images/netflix-background-246844-2224648-4918717.png');
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: (1200px,100vw);
+
+}
+
+
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.64;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+
+}
+
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img{
+    color: red;
+    width: 115px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button{
+    position: relative;
+    z-index: 1;
+}
+
+.hero{
+    font-family: 'Martel Sans',sans-serif;
+    color: white;
+    height:calc(100% - 100px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; 
+    gap: 23px; 
+    padding: 0 30px; 
+}
+
+.hero> :nth-child(1){
+    font-weight:900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight:400;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(3){
+    font-weight:400;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.separation{
+    height: 11px;
+    background-color: gray;
+    position: relative;
+    z-index:20;
+}
+ 
+.btn{
+    padding: 3px 8px;
+    font-weight: 600;
+    background-color:rgba(248,243,243,0.021);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red{
+background-color: red;
+color: white;
+padding: 3px 24px;
+font-size: 20px;
+border-radius: 4px;
+}
+
+.btn-red-sm{
+    background-color: red;
+color: white;
+margin-left: 7px;
+}
+.hero-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input{
+    color: white;
+    padding: 7px 100px 8px 14px;
+font-size: 12px;
+border-radius: 4px;
+background-color: rgba(23,23,23,0.7);
+border: 1px solid rgba(246,238,238,0.3);
+
+&::placeholder{
+    color: white;
+}
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 90vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+@media screen and (max-width:825px){
+   .first{
+    flex-wrap: wrap;
+   }
+   .main input{
+    padding: 7px 53px 8px 14px;
+   }
+
+}
+
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 1;
+}
+
+.tv-video{
+    position: absolute;
+    top: 59px;
+    right: 80px;
+    height: 350px;
+    width: 400px;
+}
+
+.pc-video{
+    position: absolute;
+    top: 7px;
+    right: 103px;
+    height: 330px;
+    width: 355px;
+}
+
+@media screen and (max-width:825px){
+
+#tv-img,#pc-img{
+    width: 390px;
+}
+ #tv-video{ 
+    top: 6px;
+    right: 60px;
+    height: 340px;
+    width: 274px;
+}
+ #pc-video{
+    position: absolute;
+    top: -36px;
+        right: 70px;
+        height: 330px;
+        width: 250px;
+}
+
+#mobile-img{
+    width: 450px;
+}
+
+nav{
+    max-width: 90vw;
+
+}
+body{
+    max-width: 150vw;
+}
+
+/* #hero> :nth-child(1){
+    font-size: 32px;
+}
+#hero> :nth-child(2){
+    font-size: 18px;
+}
+#hero> :nth-child(3){
+    font-size: 18px;
+} */
+}
+ 
+
+section.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first > div :nth-child(2){
+    font-size: 24px;
+}
+
+
+
+.faq{
+    background: #000000;
+    color: white;
+    padding: 34px;
+
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox svg{
+    filter: invert(1);
+}
+
+.faqbox{
+    display: flex;
+    background-color:#2D2D2D;
+    padding:1.5rem;
+    /* flex-direction: column; */
+    max-width:60vw ;
+    margin:34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 24px;
+
+    &:hover{
+      background-color: #414141;
+    }
+
+}
+ 
+footer{
+    color: white;
+    margin: auto;
+    max-width: 90vw; 
+    padding: 34px;
+
+}
+ 
+footer span{
+    padding:34px 0;
+}
+
+.footer{
+    color: white;
+    margin: auto;
+    padding: 34px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    
+}
+@media screen and (max-width: 825px){
+    .footer{
+     display: grid;
+    grid-template-columns: 1fr 1fr ;
+    color:white;
+    gap: 25px;
+    }
+ }
+
+
+.footer a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-item{
+   display: flex;
+   flex-direction: column;
+   gap: 23px;
+
+}
+
+
+footer .questions{
+   padding: 34px 0;
+}
+
+
